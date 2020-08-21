@@ -9,6 +9,7 @@ import com.zero.qinqiong.Service.ServiceImpl.SignInService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 
 /*
  * @author:liuzhaolu
@@ -43,9 +45,15 @@ public class SignIn {
         if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassWord())){
             return RestResult.failResult(ResultEnum.PARAM_ERROR);
         }
-        String userName = user.getUserName();
-        String passWord = user.getPassWord();
-        HttpSession session = request.getSession();
+        if(signInService.checkLoginStatus(request)){
+            return RestResult.successResult();
+        } else {
+            String userName = user.getUserName();
+            String passWord = user.getPassWord();
+            HttpSession session = request.getSession();
+            String loginToken = DigestUtils.md5DigestAsHex((new Date().toString() + session.getId()).getBytes());
+            user.setLoginToken(loginToken);
+        }
         return RestResult.successResult();
     }
 }

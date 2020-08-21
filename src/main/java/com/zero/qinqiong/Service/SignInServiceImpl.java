@@ -5,6 +5,7 @@ import com.zero.qinqiong.Service.ServiceImpl.SignInService;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /*
  * @author:liuzhaolu
@@ -21,6 +22,7 @@ public class SignInServiceImpl implements SignInService {
 
     @Override
     public boolean checkLoginStatus(HttpServletRequest httpServletRequest) {
+        HttpSession session = httpServletRequest.getSession();
         return false;
     }
 }
