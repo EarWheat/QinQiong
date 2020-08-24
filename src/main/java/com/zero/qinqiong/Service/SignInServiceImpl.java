@@ -1,6 +1,7 @@
 package com.zero.qinqiong.Service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.pangu.redis.RedisUtil;
 import com.zero.qinqiong.Service.ServiceImpl.SignInService;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +17,9 @@ import javax.servlet.http.HttpSession;
 public class SignInServiceImpl implements SignInService {
 
     @Override
-    public JSONObject login(String UserName, String PassWord) {
-        return null;
+    public boolean login(String userName, String passWord) {
+        String userPassWord = RedisUtil.get(userName);
+        return userPassWord.equals(passWord);
     }
 
     @Override

@@ -10,6 +10,6 @@ import javax.servlet.http.HttpServletRequest;
  * @desc:
  */
 public interface SignInService {
-    JSONObject login(String UserName, String PassWord);
+    boolean login(String userName, String passWord);
     boolean checkLoginStatus(HttpServletRequest httpServletRequest);
 }
