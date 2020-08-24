@@ -8,4 +8,5 @@ package com.zero.qinqiong.Service.ServiceImpl;
 public interface UserService {
     // 注册账号
     void register(String userName, String passWord);
+    boolean checkPassword(String userName, String passWord);
 }

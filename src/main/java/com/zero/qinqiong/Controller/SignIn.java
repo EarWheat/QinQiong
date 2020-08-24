@@ -6,6 +6,7 @@ import com.pangu.http.response.ResultEnum;
 import com.pangu.monitor.rest.RestCostTime;
 import com.zero.qinqiong.Entity.User;
 import com.zero.qinqiong.Service.ServiceImpl.SignInService;
+import com.zero.qinqiong.Service.ServiceImpl.UserService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,9 @@ public class SignIn {
     @Resource
     private SignInService signInService;
 
+    @Resource
+    private UserService userService;
+
     @RequestMapping("/")
     public RestResult<JSONObject> welcome(){
         JSONObject jsonObject = new JSONObject();
@@ -53,7 +57,10 @@ public class SignIn {
             HttpSession session = request.getSession();
             String loginToken = DigestUtils.md5DigestAsHex((new Date().toString() + session.getId()).getBytes());
             user.setLoginToken(loginToken);
+            if(userService.checkPassword(userName,passWord)){
+                return RestResult.successResult("login success");
+            }
         }
-        return RestResult.successResult();
+        return RestResult.failResult("login error");
     }
 }
