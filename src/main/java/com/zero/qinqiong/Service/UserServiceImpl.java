@@ -1,10 +1,13 @@
 package com.zero.qinqiong.Service;
 
-import com.pangu.Redis.RedisUtil;
 import com.zero.qinqiong.Service.ServiceImpl.UserService;
+import com.zero.qinqiong.Util.RedisUtil.RedisUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /*
  * @author:liuzhaolu
@@ -16,16 +19,18 @@ public class UserServiceImpl implements UserService {
 
     private static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
+    @Resource
+    private RedisUtil<String> redisUtil;
+
     // 注册
     @Override
     public void register(String userName, String passWord) {
-        String redisResult = RedisUtil.set(userName,passWord);
-        logger.info("user register redis:" + redisResult );
+        redisUtil.setValue(userName,passWord,3L, TimeUnit.DAYS);
     }
 
     // 校验密码
     @Override
     public boolean checkPassword(String userName, String passWord) {
-        return RedisUtil.get(userName).equals(passWord);
+        return redisUtil.getValue(userName).equals(passWord);
     }
 }

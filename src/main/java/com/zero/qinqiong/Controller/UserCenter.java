@@ -46,6 +46,7 @@ public class UserCenter {
         try {
             userService.register(user.getUserName(),user.getPassWord());
         } catch (Exception e){
+            e.printStackTrace();
             LOGGER.error("user:"+user.getUserName() + "register error! " + e.toString());
             return RestResult.failResult(ResultEnum.EXCEPTION);
         }

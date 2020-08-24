@@ -55,10 +55,8 @@
             <version>1.0.0-RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>com.pangu</groupId>
-            <artifactId>pangu</artifactId>
-            <version>1.0.0-RELEASE</version>
-            <scope>compile</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
     </dependencies>
 
