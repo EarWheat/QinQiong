@@ -1,5 +1,7 @@
 package com.zero.qinqiong.Service;
 
+import com.zero.qinqiong.Dao.UserMapper;
+import com.zero.qinqiong.Entity.User;
 import com.zero.qinqiong.Service.ServiceImpl.UserService;
 import com.zero.qinqiong.Util.RedisUtil.RedisUtil;
 import org.slf4j.Logger;
@@ -21,6 +23,9 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private RedisUtil<String> redisUtil;
+
+    @Resource
+    private UserMapper userMapper;
 
     // 注册
     @Override

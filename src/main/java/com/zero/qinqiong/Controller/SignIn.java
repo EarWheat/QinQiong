@@ -3,18 +3,15 @@ package com.zero.qinqiong.Controller;
 import com.alibaba.fastjson.JSONObject;
 import com.pangu.http.response.RestResult;
 import com.pangu.http.response.ResultEnum;
-import com.pangu.monitor.rest.RestCostTime;
 import com.zero.qinqiong.Entity.User;
 import com.zero.qinqiong.Service.ServiceImpl.SignInService;
 import com.zero.qinqiong.Service.ServiceImpl.UserService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.util.WebUtils;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -46,14 +43,14 @@ public class SignIn {
 
     @RequestMapping(value = "/login")
     public RestResult SignIn(HttpServletRequest request, HttpServletResponse response, @RequestBody User user){
-        if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassWord())){
-            return RestResult.failResult(ResultEnum.PARAM_ERROR);
+        if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
+            return RestResult.failResult("PARAM EMPTY");
         }
         if(signInService.checkLoginStatus(request)){
             return RestResult.successResult();
         } else {
             String userName = user.getUserName();
-            String passWord = user.getPassWord();
+            String passWord = user.getPassword();
             HttpSession session = request.getSession();
             String loginToken = DigestUtils.md5DigestAsHex((new Date().toString() + session.getId()).getBytes());
             user.setLoginToken(loginToken);

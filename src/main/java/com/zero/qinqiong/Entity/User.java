@@ -1,38 +1,88 @@
 package com.zero.qinqiong.Entity;
 
-/*
- * @author:liuzhaolu
- * @createTime: 2020-08-20 18:45
- * @desc:
- */
+import java.util.Date;
+
 public class User {
+    private Long id;
+
+    private Long userId;
+
     private String userName;
-    private String passWord;
-    private String phone;
+
+    private String password;
+
+    private String passport;
+
     private String loginToken;
+
+    private Date birthTime;
+
+    private Date createTime;
+
+    private Date updateTime;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 
     public String getUserName() {
         return userName;
     }
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.userName = userName == null ? null : userName.trim();
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 
-    public String getPhone() {
-        return phone;
+    public String getPassport() {
+        return passport;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPassport(String passport) {
+        this.passport = passport == null ? null : passport.trim();
+    }
+
+    public Date getBirthTime() {
+        return birthTime;
+    }
+
+    public void setBirthTime(Date birthTime) {
+        this.birthTime = birthTime;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 
     public String getLoginToken() {
