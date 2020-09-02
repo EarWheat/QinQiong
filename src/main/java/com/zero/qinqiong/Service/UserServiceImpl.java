@@ -6,6 +6,7 @@ import com.zero.qinqiong.Service.ServiceImpl.UserService;
 import com.zero.qinqiong.Util.RedisUtil.RedisUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -24,7 +25,7 @@ public class UserServiceImpl implements UserService {
     @Resource
     private RedisUtil<String> redisUtil;
 
-    @Resource
+    @Autowired
     private UserMapper userMapper;
 
     // 注册
@@ -35,7 +36,12 @@ public class UserServiceImpl implements UserService {
 
     // 校验密码
     @Override
-    public boolean checkPassword(String userName, String passWord) {
-        return redisUtil.getValue(userName).equals(passWord);
+    public boolean checkPassword(User user) {
+        User u = userMapper.selectByUserNameAndPwd(user);
+        if(u != null){
+            return true;
+        } else {
+            return false;
+        }
     }
 }

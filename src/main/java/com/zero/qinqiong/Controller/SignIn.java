@@ -44,7 +44,7 @@ public class SignIn {
     @RequestMapping(value = "/login")
     public RestResult SignIn(HttpServletRequest request, HttpServletResponse response, @RequestBody User user){
         if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
-            return RestResult.failResult("PARAM EMPTY");
+            return RestResult.failResult(ResultEnum.PARAM_EMPTY);
         }
         if(signInService.checkLoginStatus(request)){
             return RestResult.successResult();
@@ -54,10 +54,10 @@ public class SignIn {
             HttpSession session = request.getSession();
             String loginToken = DigestUtils.md5DigestAsHex((new Date().toString() + session.getId()).getBytes());
             user.setLoginToken(loginToken);
-            if(userService.checkPassword(userName,passWord)){
+            if(userService.checkPassword(user)){
                 return RestResult.successResult("login success");
             }
         }
-        return RestResult.failResult("login error");
+        return RestResult.failResult(ResultEnum.LOGIN_ERROR);
     }
 }

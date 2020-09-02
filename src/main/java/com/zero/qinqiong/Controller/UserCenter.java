@@ -1,7 +1,6 @@
 package com.zero.qinqiong.Controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.pangu.http.request.HttpClient;
 import com.pangu.http.response.RestResult;
 import com.pangu.http.response.ResultEnum;
 import com.zero.qinqiong.Entity.User;
@@ -40,11 +39,11 @@ public class UserCenter {
 
     @RequestMapping("/register")
     public RestResult<JSONObject> register(@RequestBody User user){
-        if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassWord())){
+        if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
             return RestResult.failResult(ResultEnum.PARAM_ERROR);
         }
         try {
-            userService.register(user.getUserName(),user.getPassWord());
+            userService.register(user.getUserName(),user.getPassword());
         } catch (Exception e){
             e.printStackTrace();
             LOGGER.error("user:"+user.getUserName() + "register error! " + e.toString());

@@ -20,6 +20,12 @@
     from zero_user
     where id = #{id,jdbcType=BIGINT}
   </select>
+  <select id="selectByUserNameAndPwd" parameterType="com.zero.qinqiong.Entity.User" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from zero_user
+    where user_name = #{userName,jdbcType=VARCHAR} AND password = #{password,jdbcType=VARCHAR}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from zero_user
     where id = #{id,jdbcType=BIGINT}

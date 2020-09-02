@@ -23,5 +23,5 @@ logging:
   config: classpath:logback-spring.xml
 
 mybatis:
-  mapper-locations: classpath:mapping/*Mapper.xml
-  type-aliases-package: com.example.entity
+  mapper-locations: classpath:Mapper/*Mapper.xml
+  type-aliases-package: com.zero.qinqiong.Entity

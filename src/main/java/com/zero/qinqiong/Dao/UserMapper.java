@@ -1,7 +1,9 @@
 package com.zero.qinqiong.Dao;
 
 import com.zero.qinqiong.Entity.User;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -15,5 +17,5 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
 
-    User selectByUserNameAndPwd(String userName, String passWord);
+    User selectByUserNameAndPwd(User user);
 }
