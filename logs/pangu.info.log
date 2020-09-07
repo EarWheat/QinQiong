@@ -1,8 +1,0 @@
-2020-08-24 20:13:38||INFO ||c.z.q.QinqiongApplicationTests:55||Starting QinqiongApplicationTests on bogon with PID 27834 (started by didi in /Users/didi/IdeaProjects/QinQiong)
-2020-08-24 20:13:38||INFO ||c.z.q.QinqiongApplicationTests:651||No active profile set, falling back to default profiles: default
-2020-08-24 20:13:41||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-08-24 20:13:41||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-08-24 20:13:41||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
-2020-08-24 20:13:47||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService 'applicationTaskExecutor'
-2020-08-24 20:13:49||INFO ||c.z.q.QinqiongApplicationTests:61||Started QinqiongApplicationTests in 11.256 seconds (JVM running for 12.89)
-2020-08-24 20:13:50||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService 'applicationTaskExecutor'

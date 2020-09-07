@@ -39,6 +39,7 @@ public class UserServiceImpl implements UserService {
     public boolean checkPassword(User user) {
         User u = userMapper.selectByUserNameAndPwd(user);
         if(u != null){
+            redisUtil.setValue(user.getUserName(),user.getLoginToken(),6000L, TimeUnit.SECONDS);
             return true;
         } else {
             return false;

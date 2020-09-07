@@ -1,6 +1,7 @@
 package com.zero.qinqiong.Service.ServiceImpl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.zero.qinqiong.Entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,5 +12,5 @@ import javax.servlet.http.HttpServletRequest;
  */
 public interface SignInService {
     boolean login(String userName, String passWord);
-    boolean checkLoginStatus(HttpServletRequest httpServletRequest);
+    boolean checkLoginStatus(HttpServletRequest httpServletRequest, User user);
 }

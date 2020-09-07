@@ -1,0 +1,109 @@
+2020-09-07 20:05:47||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 32339 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:05:47||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:08:37||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 32513 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:08:37||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:08:39||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:08:39||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:08:39||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-09-07 20:08:40||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:08:41||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:09:27||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 32570 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:09:27||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:09:28||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:09:28||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:09:28||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-09-07 20:09:29||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:09:30||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:12:20||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 32792 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:12:20||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:12:21||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:12:21||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:12:21||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-09-07 20:12:22||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:12:23||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:12:52||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 32837 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:12:52||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:12:54||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:12:54||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:12:54||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-09-07 20:12:55||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:12:56||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:14:38||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 32961 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:14:38||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:14:39||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:14:39||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:14:39||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-09-07 20:14:40||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:14:41||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:15:17||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 33014 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:15:17||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:15:18||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:15:18||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:15:18||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-09-07 20:15:19||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:15:20||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:16:02||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 33071 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:16:02||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:18:46||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 33244 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:18:46||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:18:47||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:18:47||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:18:47||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-09-07 20:18:48||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:18:49||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:21:53||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 33556 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:21:53||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:21:55||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:21:55||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:21:55||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-09-07 20:21:56||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:21:57||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:22:28||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 33628 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:22:28||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:22:29||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:22:29||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:22:29||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-09-07 20:22:30||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:22:32||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:23:07||INFO ||c.z.q.QinqiongApplicationTests:55||Starting QinqiongApplicationTests on bogon with PID 33716 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:23:07||INFO ||c.z.q.QinqiongApplicationTests:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:23:08||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:23:08||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:23:08||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-09-07 20:23:10||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:23:13||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:24:11||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 33831 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:24:11||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:24:12||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:24:12||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:24:12||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-09-07 20:24:14||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:24:15||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:26:19||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 34035 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:26:19||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:26:20||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:26:20||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:26:20||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-07 20:26:22||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:26:23||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:30:35||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 34400 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:30:35||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:30:36||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:30:36||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:30:36||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-09-07 20:30:37||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:30:38||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:33:20||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 34572 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:33:20||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:33:22||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:33:22||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:33:22||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-09-07 20:33:24||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:33:26||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService
+2020-09-07 20:34:22||INFO ||com.zero.qinqiong.util.RedisTest:55||Starting RedisTest on bogon with PID 34726 (started by didi in /Users/didi/IdeaProjects/QinQiong)
+2020-09-07 20:34:22||INFO ||com.zero.qinqiong.util.RedisTest:651||No active profile set, falling back to default profiles: default
+2020-09-07 20:34:23||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:249||Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-07 20:34:23||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:127||Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-07 20:34:23||INFO ||o.s.d.r.c.RepositoryConfigurationDelegate:187||Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-09-07 20:34:25||INFO ||o.s.s.c.ThreadPoolTaskExecutor:181||Initializing ExecutorService
+2020-09-07 20:34:27||INFO ||o.s.s.c.ThreadPoolTaskExecutor:218||Shutting down ExecutorService

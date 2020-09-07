@@ -46,11 +46,9 @@ public class SignIn {
         if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
             return RestResult.failResult(ResultEnum.PARAM_EMPTY);
         }
-        if(signInService.checkLoginStatus(request)){
-            return RestResult.successResult();
+        if(signInService.checkLoginStatus(request, user)){
+            return RestResult.successResult("onLine");
         } else {
-            String userName = user.getUserName();
-            String passWord = user.getPassword();
             HttpSession session = request.getSession();
             String loginToken = DigestUtils.md5DigestAsHex((new Date().toString() + session.getId()).getBytes());
             user.setLoginToken(loginToken);

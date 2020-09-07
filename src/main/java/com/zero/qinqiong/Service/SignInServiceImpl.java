@@ -1,9 +1,11 @@
 package com.zero.qinqiong.Service;
 
-import com.pangu.Redis.RedisUtil;
+import com.zero.qinqiong.Entity.User;
 import com.zero.qinqiong.Service.ServiceImpl.SignInService;
+import com.zero.qinqiong.Util.RedisUtil.RedisUtil;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -15,15 +17,20 @@ import javax.servlet.http.HttpSession;
 @Service("SignInService")
 public class SignInServiceImpl implements SignInService {
 
+    @Resource
+    private RedisUtil<String> redisUtil;
+
     @Override
     public boolean login(String userName, String passWord) {
-        String userPassWord = RedisUtil.get(userName);
+        String userPassWord = (String) redisUtil.getValue(userName);
         return userPassWord.equals(passWord);
     }
 
     @Override
-    public boolean checkLoginStatus(HttpServletRequest httpServletRequest) {
+    public boolean checkLoginStatus(HttpServletRequest httpServletRequest, User user) {
         HttpSession session = httpServletRequest.getSession();
+        String loginToken = (String) redisUtil.getValue(user.getUserName());
+        System.out.println("token:"+loginToken);
         return false;
     }
 }
