@@ -4,10 +4,10 @@
 <configuration scan="true">
 
     <!-- 通过property标签,来存放key-value数据,便于后面的动态获取,提高程序的灵活性 -->
-    <property name="log-dir" value="logs" />
-    <property name="log-name-info" value="biz" />
-    <property name="log-name-error" value="error" />
-    <property name="log-name-warn" value="warn" />
+    <property name="log-dir" value="~/IdeaProjects/logs" />
+    <property name="log-name-info" value="qinqiong-biz" />
+    <property name="log-name-error" value="qinqiong-error" />
+    <property name="log-name-warn" value="qinqiong-warn" />
 
     <!-- >>>>>>>>>>>>>>>>>>>>>>>>>配置appender(可以配置多个)>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <!--
