@@ -3,6 +3,7 @@ package com.zero.qinqiong.Service;
 import com.zero.qinqiong.Entity.User;
 import com.zero.qinqiong.Service.ServiceImpl.SignInService;
 import com.zero.qinqiong.Util.RedisUtil.RedisUtil;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -30,7 +31,9 @@ public class SignInServiceImpl implements SignInService {
     public boolean checkLoginStatus(HttpServletRequest httpServletRequest, User user) {
         HttpSession session = httpServletRequest.getSession();
         String loginToken = (String) redisUtil.getValue(user.getUserName());
-        System.out.println("token:"+loginToken);
+        if(StringUtils.isNotBlank(loginToken)){
+            return session.toString().equals(loginToken);
+        }
         return false;
     }
 }

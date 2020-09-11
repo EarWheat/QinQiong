@@ -43,17 +43,20 @@ public class SignIn {
 
     @RequestMapping(value = "/login")
     public RestResult SignIn(HttpServletRequest request, HttpServletResponse response, @RequestBody User user){
-        if(StringUtils.isBlank(user.getUserName()) || StringUtils.isBlank(user.getPassword())){
+        if(StringUtils.isBlank(user.getUserName())){
             return RestResult.failResult(ResultEnum.PARAM_EMPTY);
         }
         if(signInService.checkLoginStatus(request, user)){
-            return RestResult.successResult("onLine");
+            return RestResult.successResult(ResultEnum.USER_ONLINE);
         } else {
+            if(StringUtils.isBlank(user.getPassword())){
+                return RestResult.failResult(ResultEnum.PARAM_EMPTY);
+            }
             HttpSession session = request.getSession();
             String loginToken = DigestUtils.md5DigestAsHex((new Date().toString() + session.getId()).getBytes());
             user.setLoginToken(loginToken);
             if(userService.checkPassword(user)){
-                return RestResult.successResult("login success");
+                return RestResult.successResult(ResultEnum.LOGIN_SUCCESS);
             }
         }
         return RestResult.failResult(ResultEnum.LOGIN_ERROR);

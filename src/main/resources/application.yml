@@ -5,11 +5,13 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
   redis:
-    cluster:
-      nodes:
-        - 127.0.0.1:6379
-        - 127.0.0.1:6380
-        - 127.0.0.1:6381
+    host: 127.0.0.1
+    port: 6379
+#    cluster:
+#      nodes:
+#        - 0.0.0.0:6379
+#        - 0.0.0.0:6380
+#        - 0.0.0.0:6381
     password:
     jedis:
       pool:
