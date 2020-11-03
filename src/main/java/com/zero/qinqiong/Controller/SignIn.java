@@ -1,8 +1,8 @@
 package com.zero.qinqiong.Controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.pangu.http.response.RestResult;
-import com.pangu.http.response.ResultEnum;
+import com.ruban.pangu.http.response.RestResult;
+import com.ruban.pangu.http.response.ResultEnum;
 import com.zero.qinqiong.Entity.User;
 import com.zero.qinqiong.Service.ServiceImpl.SignInService;
 import com.zero.qinqiong.Service.ServiceImpl.UserService;
