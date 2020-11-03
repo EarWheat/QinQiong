@@ -13,9 +13,10 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>qinqiong</name>
     <description>SSO</description>
+    <packaging>war</packaging>
 
     <properties>
-        <java.version>12</java.version>
+        <java.version>8</java.version>
     </properties>
 
     <dependencies>
@@ -44,6 +45,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
